@@ -10,7 +10,7 @@ node {
     stage('Build image') {
         /* This builds the actual image */
 
-        app = docker.build("test/nodeapp")
+        app = docker.build("mlivelabdocker/nodeapp")
     }
 
     stage('Test image') {
